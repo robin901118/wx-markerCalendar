@@ -1,0 +1,62 @@
+<markerCalendar>
+  <!-- 日历头部 开始 -->
+  <view class="CalendarHead FLEX">
+    <view class="FLEX MAINCENTER CROSSCENTER">
+      <button class="FLEX MAINCENTER CROSSCENTER"
+              data-type="prevYear"
+              bindtap="setYear"
+              disabled='{{disabledPrevYear}}'>
+        <icon class='iconfont leftArrow'></icon>
+      </button>
+      <text>{{year}}</text>
+      <button class="FLEX MAINCENTER CROSSCENTER"
+              data-type="nextYear"
+              bindtap="setYear">
+        <icon class='iconfont rightArrow'></icon>
+      </button>
+    </view>
+
+    <view class="FLEX MAINCENTER CROSSCENTER">
+      <button class="FLEX MAINCENTER CROSSCENTER"
+              data-type="prevMonth"
+              bindtap="setMonth"
+              disabled='{{disabledPrevMonth}}'>
+        <icon class='iconfont leftArrow'></icon>
+      </button>
+      <text>{{month}}</text>
+      <button class="FLEX MAINCENTER CROSSCENTER"
+              bindtap="setMonth"
+              data-type="nextMonth">
+        <icon class='iconfont rightArrow'></icon>
+      </button>
+    </view>
+  </view>
+  <!-- 日历头部 结束 -->
+
+  <!-- 星期 开始 -->
+  <view class='weekBox'>
+    <text>日</text>
+    <text>一</text>
+    <text>二</text>
+    <text>三</text>
+    <text>四</text>
+    <text>五</text>
+    <text>六</text>
+  </view>
+  <!-- 星期 结束 -->
+
+  <view class='CalendarBody'>
+  <block wx:for="{{date}}" wx:for-index="idx" wx:for-item="itemName" wx:key="idx">
+    <button disabled='{{itemName["disabled"]}}'
+            data-hastag = "{{itemName['hasTag']}}"
+            data-markerdate = "{{itemName['markerDate']}}"
+            data-tiketnum = "{{itemName['tiketNum']}}"
+            bindtap='calendarEvent'>
+            <text class="DATE {{itemName['nowDate'] ? 'nowDate':''}} {{itemName['hasTag'] ? 'tag' : ''}}">
+              {{itemName['date']}}
+            </text>
+            <text wx:if="{{itemName['tiketNum']!==''}}" class='BtmTxt'>余{{itemName['tiketNum']}}张</text>
+    </button>
+  </block>
+  </view>
+</markerCalendar>

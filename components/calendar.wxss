@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url(data:font/truetype;charset=utf-8;base64,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) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.rightArrow:before { content: "\e604"; }
+.leftArrow:before { content: "\e605"; }
+.FLEX{
+  display: flex;
+  display: -webkit-box;}
+.MAINCENTER{
+  -webkit-box-pack:center;
+  -webkit-justify-content:center;
+  justify-content:center;
+}
+.CROSSCENTER{
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+  align-items:center;
+}
+.CalendarHead{
+  height: 80rpx;
+  border-bottom: 1rpx solid #eaeaea;
+  font-size: 40rpx;
+}
+.CalendarHead button{width: auto;display: inline-block;padding: 0;margin: 0 30rpx;background: transparent;}
+.CalendarHead button::after,.CalendarBody button::after{display: none;background: transparent;}
+.CalendarHead button,.CalendarBody button{background-color: transparent!important;}
+.CalendarHead view{width: 50vw;}
+.leftArrow,.rightArrow{font-size: 40rpx;}
+.weekBox{height: 80rpx;font-size: 28rpx;color: orange;display:-webkit-box;display: box;}
+.weekBox text{line-height: 80rpx;-webkit-box-flex: 1;box-flex: 1;display: inherit;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;}
+.CalendarBody{height: auto;flex-wrap:wrap;-webkit-flex-wrap:wrap;width: 100vw;display: flex;}
+.CalendarBody button{height: 100rpx;width: 14.2857vw;color: black;display: inherit;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;background: transparent;padding: 10rpx 0 0 0;position: relative;border-bottom: 1px solid #eaeaea;}
+.CalendarBody .DATE{display: inline-block;font-size: 30rpx;line-height: 10rpx;height: 30rpx;padding: 10rpx;border-radius: 50%;width: 30rpx;}
+.CalendarBody .DATE.nowDate{color: white;background: #007aff;}
+.CalendarBody .DATE.tag{background: #ff3f85;color:white;}
+.BtmTxt{position: absolute;padding: 2rpx 0;text-align: center;background: #333;font-size: 20rpx;color: white;left: 0;right: 0;bottom: 0;}

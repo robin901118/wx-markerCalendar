@@ -1,0 +1,4 @@
+ <markerCalendar marker="{{markerData}}"
+                  id="markerCalendar"
+                 bind:markerEvent="outputMarker">
+ </markerCalendar> 
